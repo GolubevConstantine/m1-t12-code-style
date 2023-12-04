@@ -16,18 +16,18 @@ public class DepositCalculator {
     }
 
     void calculateDeposit() {
-        int period;
-        int action;
+        int period; 
+        int action; 
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); // не очень понятно, по какому принципу расставлены абзацные отступы
         System.out.println("Введите сумму вклада в рублях:");
 
-        int amount = scanner.nextInt();
+        int amount = scanner.nextInt(); // здесь переменная отделилась от вывода в консоль
         System.out.println("Введите срок вклада в годах:");
-        period = scanner.nextInt();
+        period = scanner.nextInt(); // а здесь и на 30 строке переменная находится вместе с выводом
 
         System.out.println("Выберите тип вклада, 1 - вклад с обычным процентом, 2 - вклад с капитализацией:");
-        action = scanner.nextInt();
+        action = scanner.nextInt(); // я думаю, что для лучшей читаемости лучше убрать отступы между переменными и выводом в блоке 22-29
 
         double depositSum = 0;
         if (action == 1) {
